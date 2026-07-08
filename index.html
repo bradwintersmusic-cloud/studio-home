@@ -112,12 +112,12 @@
     }
 
     @media (min-width: 1200px) {
-  html { zoom: 1.085; }
-}
+      html { zoom: 1.085; }
+    }
 
-@media (min-width: 1600px) {
-  html { zoom: 1.085; }
-}
+    @media (min-width: 1600px) {
+      html { zoom: 1.085; }
+    }
 
     /* ══════════════════════════════════════════════
        HERO HEADER
@@ -361,14 +361,48 @@
        FOOTER
     ══════════════════════════════════════════════ */
     .page-footer {
-      margin-top: 64px;
+      max-width: 920px;
+      margin: 64px auto 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
       font-family: 'IBM Plex Mono', monospace;
       font-size: 10px;
       letter-spacing: 0.08em;
       color: var(--muted);
       opacity: 0.5;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
     }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 4px;
+      align-items: center;
+    }
+
+    .footer-nav a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-nav a:hover { color: var(--blue); }
+
+    .footer-nav span { opacity: 0.4; }
+
+    .page-footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .page-footer a:hover { color: var(--accent); }
 
     /* ══════════════════════════════════════════════
        MOBILE — LINKTREE LAYOUT
@@ -591,8 +625,27 @@
     </div>
 
     <footer class="page-footer">
+      <nav class="footer-nav">
+        <a href="https://bradwintersmusic-cloud.github.io/studio-home/">Studio Hub</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-news/">AET News</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studioassistant-sync/">Studio Schedule</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-videos/">Video Library</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-policies/">Policies</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-tools/">Studio Tools</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-musicians/">Session Musicians</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-resources/">Resources</a>
+        <span>|</span>
+        <a href="https://bradwintersmusic-cloud.github.io/studio-contact/">Contact</a>
+      </nav>
       <div>Belmont University &middot; Audio Engineering Technology &middot; CEMB</div>
-      <div>Contact brad.winters@belmont.edu with questions.</div>
+      <div><a href="mailto:brad.winters@belmont.edu">brad.winters@belmont.edu</a></div>
     </footer>
 
   </div>
