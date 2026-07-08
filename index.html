@@ -369,7 +369,6 @@
       font-size: 10px;
       letter-spacing: 0.08em;
       color: var(--muted);
-      opacity: 0.5;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -395,6 +394,10 @@
     .footer-nav a:hover { color: var(--blue); }
 
     .footer-nav span { opacity: 0.4; }
+
+    .page-footer .footer-meta {
+      opacity: 0.5;
+    }
 
     .page-footer a {
       color: var(--muted);
@@ -644,8 +647,8 @@
         <span>|</span>
         <a href="https://bradwintersmusic-cloud.github.io/studio-contact/">Contact</a>
       </nav>
-      <div>Belmont University &middot; Audio Engineering Technology &middot; CEMB</div>
-      <div><a href="mailto:brad.winters@belmont.edu">brad.winters@belmont.edu</a></div>
+      <div class="footer-meta">Belmont University &middot; Audio Engineering Technology &middot; CEMB</div>
+      <div class="footer-meta"><a href="mailto:brad.winters@belmont.edu">brad.winters@belmont.edu</a></div>
     </footer>
 
   </div>
