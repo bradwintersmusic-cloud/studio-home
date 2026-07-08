@@ -44,4 +44,4 @@ This page has no external data sources. Any update requires editing `index.html`
 ## Repo
 
 `bradwintersmusic-cloud/studio-home`
-Maintained by Belmont University AET — Mike Curb College of Entertainment & Music Business
+Maintained by Brad Winters
